@@ -30,7 +30,7 @@ A web-based **Campus Lost & Found Management System** developed to simplify the 
 ## 📸 Screenshots
 
 ### Home Page
-![Home](screenshots/home.png)
+<img src="screenshots/home.png" alt="Home Page" width="800">
 
 ### Registration / Login
 ![Register](screenshots/register.png)
