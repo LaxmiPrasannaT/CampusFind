@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CampusFind • Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>CampusFind</h1>
+</header>
+
+<main class="container" style="text-align:center; margin-top:80px;">
+
+    <h2>Lost & Found Portal</h2>
+
+    <p style="margin-bottom:40px;">
+        Report or search for lost and found items around campus
+    </p>
+
+    <div style="display:flex; justify-content:center; gap:30px;">
+        <a href="register.html">
+<button class="btn" style="padding: 12px 30px;">Register/Login</button>
+</a>
+
+        <a href="report.html">
+            <button class="btn" style="padding:12px 30px;">
+                Report Item
+            </button>
+        </a>
+
+        <a href="items.html">
+            <button class="btn" style="padding:12px 30px;">
+                View Items
+            </button>
+        </a>
+        <button class="btn" onclick="logout()" style="padding: 12px 30px;">Logout</button>
+        <a href="myReports.html">
+            <button class="btn" style="padding: 12px 30px;">
+                My Reports
+            </button>
+        </a>
+
+    </div>
+
+</main>
+<script>
+function logout(){
+localStorage.removeItem("registeredUser");
+alert("Logged out successfully");
+window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

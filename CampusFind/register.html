@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register • CampusFind</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+<h1>CampusFind</h1>
+</header>
+
+<main class="container">
+
+<h2>Register/Login</h2>
+
+  <div class="toggle-buttons">
+    <button id="registerBtn" onclick="showRegister()" class="btn active">
+        Register
+    </button>
+    <button id="loginBtn" onclick="showLogin()" class="btn">
+        Login
+    </button>
+</div>
+
+
+<form id="registerForm" class="form" autocomplete="off">
+
+<input type="text" id="name" placeholder="Name" required >
+
+<input type="text" id="roll" placeholder="Roll Number" required >
+
+<input type="text" id="department" placeholder="Department" required >
+
+<input type="text" id="phone" placeholder="Phone Number" required >
+
+<button class="btn">Register</button>
+
+</form>
+<form id="loginForm" class="form" style="display:none;" autocomplete="off">
+
+<input id="loginRoll" placeholder="Roll Number" >
+<input id="loginPhone" placeholder="Phone Number" >
+
+<button class="btn">Login</button>
+
+</form>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="js/supabase.js"></script>
+<script>
+const user = localStorage.getItem("registeredUser");
+
+if(user){
+alert("You are already registered.");
+window.location.href = "index.html";
+}
+</script>
+<script src="js/register.js"></script>
+
+</body>
+</html>

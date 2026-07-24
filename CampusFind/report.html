@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Item</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>CampusFind</h1>
+</header>
+
+<main class="container">
+
+<h2>Report Item</h2>
+
+<form id="reportForm" class="form" autocomplete="off">
+
+
+<input id="name" placeholder="Name" required>
+<textarea id="description" placeholder="Description"></textarea>
+<input type="text" id="location" placeholder="Location" required>
+<!--<input type="text" id="contact" placeholder="Contact number" required>-->
+
+<select id="type">
+<option value="Lost">Lost</option>
+<option value="Found">Found</option>
+</select>
+<select id="category" required>
+<option value="">Select Category</option>
+<option value="Electronics">Electronics</option>
+<option value="Books">Books</option>
+<option value="ID Cards">ID Cards</option>
+<option value="Accessories">Accessories</option>
+<option value="Others">Others</option>
+</select>
+
+<input type="file" id="image" required>
+
+<button class="btn">Submit</button>
+
+</form>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="js/supabase.js"></script>
+<script>
+const user = localStorage.getItem("registeredUser");
+
+if(!user){
+alert("Please register before reporting items.");
+window.location.href = "register.html";
+}
+</script>
+<script src="js/addItem.js"></script>
+
+</body>
+</html>
