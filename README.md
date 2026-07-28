@@ -27,28 +27,6 @@ A web-based **Campus Lost & Found Management System** developed to simplify the 
 
 ---
 
-## 📸 Screenshots
-
-### Home Page
-![Home](home.png)
-
-### Registration / Login
-![Register](screenshots/register.png)
-
-### Report Item
-![Report](screenshots/report.png)
-
-### Admin Panel
-![Admin](screenshots/admin.png)
-
-### View Items
-![Items](screenshots/items.png)
-
-### My Reports
-![Reports](screenshots/myreports.png)
-
----
-
 ## 📂 Project Modules
 
 - User Registration & Login
